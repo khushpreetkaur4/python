@@ -1,0 +1,453 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "cdbf2cc6-c669-4f5b-9dcf-63e6c2c91966",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#dict...stores the data in key value format"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5c501fbb-7da5-413c-950a-504f5d64657b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#there is use of curly brackets like set data type"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "26509418-191d-4844-bdb6-c1976882ebe7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''key can be a string , numeric , boolean value\n",
+    "it cannot be started from special case characters...special case characters within qoutes is accepted as it is then considered as string data type. \n",
+    "value can be list . tuple. dict. complex no. .str. int. float"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "adde7f1d-4ee3-4bd7-b8db-240d6c14742b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d={'name':'khushi', 'email': 'kbhatia650@gmail.com', 234:'akpl', True: 'yes'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "67fab95d-a3f5-40af-8690-feac4dffe011",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'akpl'"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d[234]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "256eda68-36b8-4cf4-9c5a-f99897e8f0c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'yes'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d[True]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "1efe45cb-15c6-4201-895c-5f8ab2d26b5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'yes'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "6e7f0774-e41d-4563-b307-22d855159393",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d={'name':'khushi', 'email': 'kbhatia650@gmail.com', 'name':'akpl'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "65531f32-cc46-4048-9bda-9625e302cad9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'akpl'"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d['name']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "c69c3441-e8e9-41ac-ba6e-dfd063ac9f57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# dict can store list, dict, tuple in it "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "000bba92-c7a4-4834-90fe-b565d73bca31",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d={'name':'khushi', 'email': 'kbhatia650@gmail.com', 'name':'akpl'}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "4f3c4104-733c-45f3-aed1-8687e915e0a1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d[456]='sudh'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "b12fa3c5-6193-41e3-9029-7fd0282f2450",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'name': 'akpl', 'email': 'kbhatia650@gmail.com', 456: 'sudh'}"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "dec5013e-caf7-4cd2-8feb-fc89953a6dcd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'akpl'"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.pop('name')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "4311d53a-3f35-4765-ad1e-779723238815",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'email': 'kbhatia650@gmail.com', 456: 'sudh'}"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "46aa952a-e229-4b0d-9736-68ef5ff7c9d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_keys(['email', 456])"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.keys()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "bad103f9-ef7c-4a78-8d44-1e2cb247f312",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['email', 456]"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(d.keys())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "31fbb5cb-83b5-4ead-981c-335274a744af",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{456, 'email'}"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "set(d.keys())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "20ed3504-9918-4a63-b349-9f06d99e6f7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict_values(['kbhatia650@gmail.com', 'sudh'])"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d.values()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "c86c49e5-50e6-4376-84c2-e7ac5e1856d3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('kbhatia650@gmail.com', 'sudh')"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tuple(d.values())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "99381506-f483-4021-a4a2-e132a4ff2ec8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#conditional statements "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "373fca5b-84d1-4270-9ba9-5f8a097026fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "u r in b batch\n"
+     ]
+    }
+   ],
+   "source": [
+    "marks=79\n",
+    "if marks >=80 :\n",
+    "    print(' u r in a batch')\n",
+    "elif marks>= 60 and marks<=80:\n",
+    "    print('u r in b batch')\n",
+    "elif marks>=40 and marks<=60:\n",
+    "    print(' u r in c batch ')\n",
+    "else:\n",
+    "    print('u r in d batch')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "35ad905d-1ebe-4ef7-978b-0a459040fafd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "marks= int(input('enter marks obtained'))\n",
+    "if marks >=80 :\n",
+    "    print(' u r in a batch')\n",
+    "elif marks>= 60 and marks<=80:\n",
+    "    print('u r in b batch')\n",
+    "elif marks>=40 and marks<=60:\n",
+    "    print(' u r in c batch ')\n",
+    "else:\n",
+    "    print('u r in d batch')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc5e1084-ec21-4f1c-b2d3-b0043cfb7d2c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5815dfc3-4173-4c58-9cfd-741554c19571",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[1,2,3,4,5,6,7,8]\n",
+    "for i in l:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "61e370b2-a890-4b7c-8abc-8832aa26fb04",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# for will access or extract the data one by one and i is a variable use to store accessed or extracted value then we willprint i"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ba2fe7cd-fa79-465e-b164-2bd09b8bcafb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
